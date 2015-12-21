@@ -14,5 +14,8 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycleView);
+        RecycleViewAdapter adapter = new RecycleViewAdapter(getApplicationContext());
+        mRecyclerView.setAdapter(adapter);
+        mRecyclerView.setHasFixedSize(false);
     }
 }

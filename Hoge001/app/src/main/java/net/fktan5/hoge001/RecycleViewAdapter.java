@@ -7,12 +7,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RecycleViewAdapter extends RecyclerView.Adapter {
 
     private LayoutInflater mLayoutInflater;
+    private List<SampleModel> mModels = new ArrayList<>();
 
     public RecycleViewAdapter(Context context){
         mLayoutInflater = LayoutInflater.from(context);
+        for (int i = 0; i < 15; i++){
+            SampleModel model = new SampleModel("にゃしぃ", "睦月型" + i + "番艦");
+            mModels.add(model);
+        }
     }
 
     @Override
@@ -23,13 +31,13 @@ public class RecycleViewAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((RecycleViewHolder)holder).mTextName.setText(String.valueOf(position));
-        ((RecycleViewHolder)holder).mTextType.setText(String.valueOf(position));
+        ((RecycleViewHolder)holder).mTextName.setText(mModels.get(position).getName());
+        ((RecycleViewHolder)holder).mTextType.setText(mModels.get(position).getType());
     }
 
     @Override
     public int getItemCount() {
-        return 15;
+        return mModels.size();
     }
 
     private static class RecycleViewHolder extends RecyclerView.ViewHolder {
