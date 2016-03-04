@@ -9,4 +9,7 @@
         <item>霧島</item>
     </string-array>
     <string name="title_activity_thrid">第三アクティビティ</string>
+    <string name="welcome">ようこそ</string>
+    <string name="action_2">アクション2</string>
+    <string name="action1">アクション1</string>
 </resources>

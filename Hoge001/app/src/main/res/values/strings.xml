@@ -8,4 +8,7 @@
         <item>Kirishima</item>
     </string-array>
     <string name="title_activity_thrid">ThridActivity</string>
+    <string name="welcome">Welcome</string>
+    <string name="action1">act1</string>
+    <string name="action_2">act2</string>
 </resources>
