@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hoge001 見た目を中心に扱いたい</string>
+    <string name="text1">マイクチェックです</string>
+    <string-array name="kongou_ships">
+        <item>金剛</item>
+        <item>比叡</item>
+        <item>榛名</item>
+        <item>霧島</item>
+    </string-array>
+</resources>

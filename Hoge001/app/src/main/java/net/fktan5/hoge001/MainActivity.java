@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @OnClick(R.id.button2) void thirdActivity(){
+        Intent intent = new Intent(this, ThirdActivity.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.fab1) void onClickFab(){
         Snackbar.make(findViewById(R.id.relativeLayout), R.string.text1, Snackbar.LENGTH_LONG)
                 .show();
