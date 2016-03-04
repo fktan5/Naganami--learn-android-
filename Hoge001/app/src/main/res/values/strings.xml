@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Hoge001 Visual Training</string>
     <string name="text1">Mic check</string>
+    <string-array name="kongou_ships">
+        <item>Kongou</item>
+        <item>Hiei</item>
+        <item>Haruna</item>
+        <item>Kirishima</item>
+    </string-array>
+    <string name="title_activity_thrid">ThridActivity</string>
 </resources>

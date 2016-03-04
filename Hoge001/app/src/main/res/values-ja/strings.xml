@@ -8,4 +8,5 @@
         <item>榛名</item>
         <item>霧島</item>
     </string-array>
+    <string name="title_activity_thrid">第三アクティビティ</string>
 </resources>
